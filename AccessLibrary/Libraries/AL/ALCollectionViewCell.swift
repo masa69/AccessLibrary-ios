@@ -15,15 +15,7 @@ class ALCollectionViewCell: UICollectionViewCell {
         }
     }
     
-    /*var image: UIImage? {
-        get {
-            return self.originImage
-        }
-    }*/
-    
     private var originAsset: PHAsset?
-    
-//    private var originImage: UIImage?
     
     
     func setCell(asset: PHAsset, size: CGSize) {
@@ -32,7 +24,6 @@ class ALCollectionViewCell: UICollectionViewCell {
         
         asset.toImage(size: size, contentMode: .aspectFill) { (image: UIImage?) in
             self.imageView.image = image
-//            self.originImage = image
         }
         
         switch asset.mediaType {

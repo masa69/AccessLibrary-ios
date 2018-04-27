@@ -8,10 +8,6 @@ class DefaultButton: UIButton {
     
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
-        self.afterInit()
-    }
-    
-    private func afterInit() {
         self.addTarget(self, action: #selector(self.onTouchDown(_:)), for: .touchDown)
     }
     
