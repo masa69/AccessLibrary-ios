@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wjq-MV-LwO">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Video Preview View Controller-->
+        <scene sceneID="moz-x0-9SN">
+            <objects>
+                <viewController storyboardIdentifier="ALVideoPreview" useStoryboardIdentifierAsRestorationIdentifier="YES" id="Wjq-MV-LwO" customClass="ALVideoPreviewViewController" customModule="AccessLibrary" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="O4a-MF-bKi">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CBM-Uh-W92" customClass="ALVideoPlayerView" customModule="AccessLibrary" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="320" height="548"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="CBM-Uh-W92" firstAttribute="top" secondItem="ilL-p6-qAi" secondAttribute="top" id="GTz-3e-jF5"/>
+                            <constraint firstItem="ilL-p6-qAi" firstAttribute="trailing" secondItem="CBM-Uh-W92" secondAttribute="trailing" id="Qiq-fG-Kje"/>
+                            <constraint firstItem="CBM-Uh-W92" firstAttribute="leading" secondItem="ilL-p6-qAi" secondAttribute="leading" id="X7k-vV-XFf"/>
+                            <constraint firstItem="ilL-p6-qAi" firstAttribute="bottom" secondItem="CBM-Uh-W92" secondAttribute="bottom" id="wzd-p6-ZK4"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ilL-p6-qAi"/>
+                    </view>
+                    <connections>
+                        <outlet property="videoPlayerView" destination="CBM-Uh-W92" id="t6D-7Q-ah2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V6m-ve-XbW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="619" y="-102"/>
+        </scene>
+    </scenes>
+</document>
