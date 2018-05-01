@@ -119,7 +119,7 @@
 			path = Utility;
 			sourceTree = "<group>";
 		};
-		04728C3120915EBA00A8081A /* AL */ = {
+		04728C3120915EBA00A8081A /* AccessLibrary */ = {
 			isa = PBXGroup;
 			children = (
 				04728C32209176EE00A8081A /* ALCollectionView.swift */,
@@ -130,7 +130,7 @@
 				04728C4C2091C0C800A8081A /* ALVideoPreviewViewController.swift */,
 				04728C412091B72200A8081A /* ALViewController.swift */,
 			);
-			path = AL;
+			path = AccessLibrary;
 			sourceTree = "<group>";
 		};
 		04728C382091A2E700A8081A /* Extensions */ = {
@@ -146,7 +146,7 @@
 		04728C432091B79800A8081A /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				04728C3120915EBA00A8081A /* AL */,
+				04728C3120915EBA00A8081A /* AccessLibrary */,
 			);
 			path = Libraries;
 			sourceTree = "<group>";
