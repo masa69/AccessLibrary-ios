@@ -42,7 +42,9 @@ class ALViewController: UIViewController {
                 }
             }
         }
-        alCollectionView.initList()
+        alCollectionView.initList(type: .imageAndVideo) { (isAuthorization: Bool) in
+            print("isAuthorization: \(isAuthorization)")
+        }
     }
     
     
